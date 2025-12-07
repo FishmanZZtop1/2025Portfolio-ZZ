@@ -1,4 +1,5 @@
 import React, { useState, useEffect, useRef } from "react";
+import { Analytics } from "@vercel/analytics/react";
 import {
   ArrowRight,
   Smartphone,
@@ -1427,6 +1428,7 @@ const App = () => {
 
   return (
     <div className="relative min-h-screen bg-[#050505] text-white selection:bg-[#DA205A] selection:text-white font-sans overflow-x-hidden cursor-none">
+      <Analytics />
       <style>{`
         @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=JetBrains+Mono:wght@100;400;700&display=swap');
         
